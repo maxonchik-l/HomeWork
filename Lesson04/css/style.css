@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Open Sans';
+}
+
+section {
+    background-color: #E5E5E5;
+}
+
+.title-head__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.conteiner {
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.text {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.line {
+    margin-top: 20px;
+    border: 1px solid #828282;
+}
+
+.header-nav {}
+
+.header-nav__menu {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.section-about-me {
+    height: 500px;
+    background-color: #E5E5E5;
+    padding-top: 5%;
+
+}
+
+.section-skills__items {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.h1-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.h2-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+/* .conteiner:nth-child(2n) {
+    background-color: #F6F6F6;
+} */
