@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 20px 40px;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 20px;
+    max-width: 500px;
+    color: white;
+}
+
+.main {
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 400px;
+    max-width: 600px;
+}
+
+.text {
+    color: white;
+
+}
+
+.conteiner__text {
+    margin: 0 auto;
+    padding: auto 20px;
+    max-width: 1200px;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
+    right: -100px;
+    max-width: 1000px;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.doodle1 {
+    position: absolute;
+    max-width: 200px;
+    bottom: 0;
+    right: 1000px;
+}
+
+.doodle2 {
+    position: absolute;
+    max-width: 200px;
+    top: 0;
+    right: 250px;
+}
+
+.doodle3 {
+    position: absolute;
+    max-width: 200px;
+    top: 200px;
+    right: 600px;
+}
+
+.cursor {
+    position: absolute;
+    max-width: 200px;
+    bottom: 0;
+    right: 250px;
+}
