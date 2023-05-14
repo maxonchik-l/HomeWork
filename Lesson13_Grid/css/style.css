@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Delius Unicase' format('truetype');
+    src: url(https://fonts.google.com/specimen/Delius+Unicase?query=Delius+Unicase);
+}
+
+/* value */
+:root {
+
+    /* colors */
+    --color-white: #fff;
+    --color-grey: #E0E0E0;
+    --color-black: #000;
+
+    /* fonts */
+    --text-title: 'Delius Unicase';
+    --text-font-simple: 'Roboto';
+
+    --font-img-left: 500 20px/23px var(--text-font-simple);
+    --font-img-right: 400 20px/23px var(--text-font-simple);
+    --font-title: 400 36px/45px var(--text-title);
+}
+
+/* value end*/
+
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.gallery-1__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font: var(--font-title);
+    color: var(--color-black);
+}
+
+.gallery-1__wrapper {
+
+    justify-content: center;
+    /* border: 1px solid black; */
+    /* display: grid; */
+    /* grid-template-columns: 370px 770px; */
+    /* gap: 20px; */
+
+}
+
+.gallery-1__photo {
+    /* background-color: aquamarine; */
+    /* width: 100%; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery-1__photo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 43%);
+    border-radius: 20px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* .gallery-1__photo::before:hover {
+    transform: scale(2);
+} */
+.photo {
+    transition: all 1s;
+}
+
+.gallery-1__photo:hover .photo {
+    transform: scale(1.5);
+    /* transition: all 1s; */
+    /* border-radius: 40px; */
+}
+
+
+
+.gallery-1__photo .photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.gallery-1__photo p {
+    /* position: relative; */
+    z-index: 2;
+}
+
+.gallery-1__text-1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font: var(--font-img-left);
+    color: var(--color-white);
+
+}
+
+.gallery-1__text-2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font: var(--font-img-right);
+    color: var(--color-grey);
+}
+
+.gallery-1__photo-like {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.gallery-1__photo-download {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.icon {
+    opacity: 0%;
+    width: 40px;
+    z-index: 10;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.gallery-1__photo:hover .icon {
+    opacity: 100%;
+}
+
+/* .gallery-1__photo:nth-child(2n) {
+    background-color: blueviolet;
+} */
+
+
+
+
+/* .gallery-1__photo:nth-child(1) {
+    background: url(../img/gallery_1/image-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+} */
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 370px 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "row_1_1 row_1_2 row_1_2"
+        "row_2_1 row_2_1 row_2_2"
+        "row_3_1 row_3_2 row_3_2";
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+}
+
+/* .container-1 {
+    
+} */
+
+.row_1_1 {
+    grid-area: row_1_1;
+
+}
+
+.row_1_2 {
+    grid-area: row_1_2;
+
+}
+
+.row_2_1 {
+    grid-area: row_2_1;
+
+}
+
+.row_2_2 {
+    grid-area: row_2_2;
+
+}
+
+.row_3_1 {
+    grid-area: row_3_1;
+
+}
+
+.row_3_2 {
+    grid-area: row_3_2;
+
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.second_row_1_1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.second_row_1_2 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+
+.second_row_2_1 {
+    grid-row: 1/3;
+    grid-column: 1/3;
+
+}
+
+.second_row_2_2 {
+    grid-column: 1/1;
+    grid-row: 1/3;
+
+}
+
+.second_row_3_1 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+
+
+}
+
+.second_row_3_2 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+}
